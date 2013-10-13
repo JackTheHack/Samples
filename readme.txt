@@ -1,0 +1,1 @@
+This repository contains samples from blog (mr-kody.blogspot.com)

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Backbone and WebAPI sample:</title>
+
+    <!-- Libraries -->
+    <script src="lib/jquery-1.10.2.js"></script>
+    <script src="lib/json2.js"></script>
+    <script src="lib/underscore.js"></script>
+    <script src="lib/backbone.js"></script>    
+
+    <!-- Application logic -->
+    <script src="Model/Item.js"></script>
+    <script src="Model/Skill.js"></script>    
+
+    <!-- Views -->
+    <script src="View/SkillView.js"></script>
+    <script src="View/AppView.js"></script>
+
+    <script src="global.js"></script>   
+</head>
+<body>
+    <div id="app">
+        <div class="skillsTab">
+            <h1>Skills:</h1>
+            <div id="skillList">
+            </div>
+
+            <div class="addSkill">
+                <label>Add skill:</label>
+                <input type="text" id="skillName" />
+                <input type="text" id="skillDescription" />
+                <input id="addSkill" type="button" value="Add" />
+            </div>
+        </div>
+    </div>
+
+      <!-- Templates -->
+
+  <script type="text/template" id="skill-template">
+    <div class="view item skill">      
+      <label><%- title %></label>           
+      <div class="skill-description">
+        <%= description %>
+      </div>
+    </div>
+  </script>
+
+</body>
+</html>
